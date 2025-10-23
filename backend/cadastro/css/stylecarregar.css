@@ -1,0 +1,108 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Playfair Display',serif;
+}
+
+.link-voltar {
+    /* Centraliza qualquer conteúdo inline (texto, links, etc.) */
+    text-align: center; 
+    /* Adiciona um espaço abaixo do link, se necessário */
+    margin-bottom: 20px; 
+}
+/* Container dos cards */
+.cards-container {
+    display: flex; /* ESSENCIAL: Transforma o container em um layout flexível */
+    flex-wrap: wrap; /* ESSENCIAL: Permite que os cards passem para a próxima linha */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/* Cada card */
+.card {
+    /* Garante que o card tenha largura suficiente para caber na tela, mas não ocupe 100% */
+    width: 250px;
+    /* ... outras estilizações ... */
+}
+
+/* Container dos cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Faz quebrar linha se não couberem */
+    gap: 20px;       /* Espaço entre os cards */
+}
+
+/* Cada card */
+.card {
+    background-color: white;
+    border: 2px solid #ff69b4; /* Borda rosa */
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;  /* Largura fixa do quadradinho */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Botões dentro do card */
+.card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:first-of-type {
+    background-color: #ff69b4; /* rosa */
+    color: white;
+}
+
+.card button:last-of-type {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+/* Inputs de busca */
+input[type="text"] {
+    background-color: white;
+    border: 2px solid #ff69b4;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    width: 300px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff1493;
+    box-shadow: 0 0 5px #ff69b4;
+}
+
+/* Botão de busca */
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    color: #ff69b4;
+    text-decoration: none;
+    margin-left: 10px;
+}
