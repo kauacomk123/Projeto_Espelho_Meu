@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $user = "root"; // usuário padrão do XAMPP
-$password = "password"; // sua senha
-$database = "espelho_meu"; // nome do seu banco
+$password = "*****"; // sua senha
+$database = "********"; // nome do seu banco
 
 // Criar conexão
 $conn = new mysqli($host, $user, $password, $database);
@@ -14,3 +14,4 @@ if ($conn->connect_error) {
 }
 
 ?>
+
